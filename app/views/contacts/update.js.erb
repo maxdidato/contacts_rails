@@ -1,0 +1,9 @@
+<% if @contact.errors.any? %>
+$("#errors").html($("<div />").html('<%= escape_javascript(@contact.error_messages)%>').text());
+<% else %>
+$("#<%= dom_id(@contact) %>").replaceWith("<%= escape_javascript(render(:partial => @contact)) %>");
+<% @contact = Contact.new %>
+$(".edit_contact").replaceWith("<%= escape_javascript(render(:partial => "form"))%>")
+$(".new_contact")[0].reset();
+$("#errors").html($("<div />").text())
+<% end %>

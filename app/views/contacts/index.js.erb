@@ -1,0 +1,4 @@
+$('#contacts').find("tr:gt(0)").remove();
+<% @contacts.each do |contact| %>
+$('<%= escape_javascript(render(:partial => contact))%>').appendTo('#contacts');
+<% end %>
