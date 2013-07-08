@@ -21,3 +21,7 @@ group :test do
   gem 'watir'
   gem 'rspec-rails'
 end
+
+group :development do
+  gem 'rspec-rails'
+end

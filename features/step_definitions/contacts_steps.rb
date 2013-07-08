@@ -52,9 +52,6 @@ Then /^I should not see the contact in the contact list$/ do
   end
 end
 
-When /^I accept the popup$/ do
-  $browser.driver.switch_to.alert.dismiss
-end
 When /^I change the details as following$/ do |data|
   @data = data
   sleep(1)
@@ -75,8 +72,14 @@ Then /^I should not see (.*) as first name and (.*) as last name in the contact 
   end
 end
 
-
 Then /^I should see '(.*)'$/ do |text|
   raise "Expected to see #{text}" unless $browser.text.include?(text)
 end
 
+When /^I add '(.*)' as picture$/ do |pic|
+  $browser.file_field.set("#{ROOT_DIR}/features/fixtures/#{pic}")
+
+end
+Then /^I should see '(.*)' as picture$/ do |pic|
+  raise "No image found" unless $browser.img.src.include?(pic)
+end

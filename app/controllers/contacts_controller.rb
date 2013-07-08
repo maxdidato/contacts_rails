@@ -1,5 +1,6 @@
 class ContactsController < ApplicationController
   respond_to :js,:html
+
   def index
     @contacts = Contact.all
     search = get_request_parameter(:search)

@@ -6,19 +6,18 @@ h1 {
 #container {
   width: 1024px;
   margin: 0 auto;
-  overflow: hidden; /* add this to contain floated children */
+  overflow: hidden;
   background: #f3f3f3;
   padding: 15px;
 }
 
-#wrapper {
+#wrapper {}
 
-}
 #work {
-  float:left; /* add this */
+  float:left;
 }
 #work form {
-  background: #fff;
+  background: #e3e3e3;
   width: 460px;
   padding: 20px;
 }
@@ -36,7 +35,7 @@ h1 {
 }
 #contacts_container {
   width: 500px;
-  float: left; /* add this */
+  float: left;
 }
 
 #contacts {
