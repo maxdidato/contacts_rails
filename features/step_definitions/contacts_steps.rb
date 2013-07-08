@@ -67,12 +67,16 @@ end
 When /^I type '(.*)' in the search box$/ do |value|
   $browser.text_field(:id => 'search').set value
 end
+
 Then /^I should not see (.*) as first name and (.*) as last name in the contact list$/ do |firstname, lastname|
   sleep(1)
   unless $browser.table(:id => 'contacts').trs.find { |tr| tr.tds[0].text==firstname && tr.tds[1].text == lastname }.nil?
     raise "Contact not in the list"
   end
 end
+
+
 Then /^I should see '(.*)'$/ do |text|
   raise "Expected to see #{text}" unless $browser.text.include?(text)
 end
+

@@ -19,5 +19,5 @@ gem 'remotipart'
 group :test do
   gem 'cucumber-rails'
   gem 'watir'
-  gem 'database_cleaner'
+  gem 'rspec-rails'
 end

@@ -2,8 +2,13 @@ class ContactsController < ApplicationController
   respond_to :js,:html
   def index
     @contacts = Contact.all
-    @contacts = search_contact_by_lastname(params[:search]) if params[:search]
+    search = get_request_parameter(:search)
+    @contacts = search_contact_by_lastname(search) if search
     @contact = Contact.new
+  end
+
+  def get_request_parameter name
+    params[name]
   end
 
   def search_contact_by_lastname lastname
@@ -11,7 +16,7 @@ class ContactsController < ApplicationController
   end
 
   def show
-    @contact = Contact.find(params[:id])
+    @contact = Contact.find(get_request_parameter(:id))
   end
 
   def new
@@ -19,21 +24,21 @@ class ContactsController < ApplicationController
   end
 
   def edit
-    @contact = Contact.find(params[:id])
+    @contact = Contact.find(get_request_parameter(:id))
   end
 
   def create
-    @contact = Contact.new(params[:contact])
+    @contact = Contact.new(get_request_parameter(:contact))
     @contact.save
   end
 
   def update
-    @contact = Contact.find(params[:id])
-    @contact.update_attributes(params[:contact])
+    @contact = Contact.find(get_request_parameter(:id))
+    @contact.update_attributes(get_request_parameter(:contact))
   end
 
   def destroy
-    @contact = Contact.find(params[:id])
+    @contact = Contact.find(get_request_parameter(:id))
     @contact.destroy
   end
 end
