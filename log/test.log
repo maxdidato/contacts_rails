@@ -17,3 +17,71 @@ Connecting to database specified by database.yml
   [1m[35m (0.1ms)[0m  commit transaction
   [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
   [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Connecting to database specified by database.yml
+  [1m[36m (0.5ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_1[0m
+  [1m[35m (0.2ms)[0m  begin transaction
+SQLite3::SQLException: cannot start a transaction within a transaction: begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+SQLite3::SQLException: cannot rollback - no transaction is active: rollback transaction
+  [1m[36m (0.0ms)[0m  [1mSAVEPOINT active_record_1[0m
+  [1m[35m (0.0ms)[0m  RELEASE SAVEPOINT active_record_1
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  SAVEPOINT active_record_2
+  [1m[36m (0.0ms)[0m  [1mRELEASE SAVEPOINT active_record_2[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+SQLite3::SQLException: cannot start a transaction within a transaction: begin transaction
+  [1m[36m (0.0ms)[0m  [1mrollback transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+SQLite3::SQLException: cannot rollback - no transaction is active: rollback transaction
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  rollback transaction
+Connecting to database specified by database.yml
+  [1m[36m (8.1ms)[0m  [1mDELETE FROM "contacts";[0m
+  [1m[35m (0.1ms)[0m  SELECT name FROM sqlite_master WHERE type='table' AND name='sqlite_sequence';
+  [1m[36m (0.1ms)[0m  [1mDELETE FROM sqlite_sequence where name = 'contacts';[0m
+Connecting to database specified by database.yml
+  [1m[36m (6.8ms)[0m  [1mDELETE FROM "contacts"[0m
+  [1m[35m (13.5ms)[0m  DELETE FROM "contacts"
+  [1m[36m (8.3ms)[0m  [1mDELETE FROM "contacts"[0m
+  [1m[35m (5.1ms)[0m  DELETE FROM "contacts"
+  [1m[36m (11.0ms)[0m  [1mDELETE FROM "contacts"[0m
+Connecting to database specified by database.yml
+  [1m[36m (8.6ms)[0m  [1mDELETE FROM "contacts"[0m
+  [1m[35m (9.8ms)[0m  DELETE FROM "contacts"
+  [1m[36m (3.8ms)[0m  [1mDELETE FROM "contacts"[0m
+  [1m[35m (13.3ms)[0m  DELETE FROM "contacts"

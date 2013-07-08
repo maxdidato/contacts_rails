@@ -22854,3 +22854,901 @@ Processing by ContactsController#new as JS
   Rendered contacts/_form.html.haml (11.9ms)
   Rendered contacts/new.js.erb (13.7ms)
 Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 12:39:30 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (2.5ms)
+  Rendered contacts/_contact.html.haml (3.0ms)
+  Rendered contacts/_contact.html.haml (0.8ms)
+  Rendered contacts/index.html.haml within layouts/application (43.8ms)
+Completed 200 OK in 187ms (Views: 95.2ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 12:39:30 +0100
+Served asset /application.css - 200 OK (3ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 12:39:30 +0100
+Served asset /contacts.css - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 12:39:30 +0100
+Served asset /jquery.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 12:39:30 +0100
+Served asset /jquery.remotipart.js - 200 OK (4ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 12:39:30 +0100
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 12:39:30 +0100
+Served asset /jquery_ujs.js - 200 OK (2ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 12:39:30 +0100
+Served asset /application.js - 200 OK (6ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 12:39:30 +0100
+Served asset /jquery.iframe-transport.js - 200 OK (1ms)
+
+
+Started GET "/contacts?utf8=%E2%9C%93&search=Jun" for 127.0.0.1 at 2013-07-08 12:39:45 +0100
+Processing by ContactsController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"Jun"}
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" 
+  Rendered contacts/index.js.erb (1.0ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts?utf8=%E2%9C%93&search=Ju" for 127.0.0.1 at 2013-07-08 12:39:48 +0100
+Processing by ContactsController#index as JS
+  Parameters: {"utf8"=>"✓", "search"=>"Ju"}
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_contact.html.haml (3.9ms)
+  Rendered contacts/index.js.erb (5.0ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 12:39:48 +0100
+Processing by ContactsController#index as JS
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+  Rendered contacts/_contact.html.haml (1.2ms)
+  Rendered contacts/_contact.html.haml (0.8ms)
+  Rendered contacts/index.js.erb (3.3ms)
+Completed 200 OK in 6ms (Views: 4.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 12:39:50 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (19.9ms)
+  Rendered contacts/new.js.erb (22.7ms)
+Completed 200 OK in 26ms (Views: 25.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2013-07-08 12:39:54 +0100
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EVN0CN0XCqO32NgLniR6m8xuZxiIwAwG6kwp7Zxyw7E=", "contact"=>{"first_name"=>"Massimiliano", "last_name"=>"DI D", "email"=>"", "mobile"=>"", "landline"=>"", "twitter"=>""}, "commit"=>"Save"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  rollback transaction
+  Rendered contacts/create.js.erb (2.0ms)
+Completed 200 OK in 10ms (Views: 3.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2013-07-08 12:40:16 +0100
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EVN0CN0XCqO32NgLniR6m8xuZxiIwAwG6kwp7Zxyw7E=", "contact"=>{"first_name"=>"Massimiliano", "last_name"=>"DI Dato", "email"=>"mas@dd.dd", "mobile"=>"43434343", "landline"=>"", "twitter"=>"", "photo"=>#<ActionDispatch::Http::UploadedFile:0x007ffd1060a008 @original_filename="Screenshot from 2013-04-16 11:50:46.png", @content_type="image/png", @headers="Content-Disposition: form-data; name=\"contact[photo]\"; filename=\"Screenshot from 2013-04-16 11:50:46.png\"\r\nContent-Type: image/png\r\n", @tempfile=#<File:/tmp/RackMultipart20130708-22868-1r9xpdg>>}, "commit"=>"Save", "remotipart_submitted"=>"true", "X-Requested-With"=>"IFrame", "X-Http-Accept"=>"text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01"}
+Command :: identify -format '%wx%h,%[exif:orientation]' '/tmp/Screenshot from 2013-04-16 11_50_4620130708-22868-1cns5fl.png[0]'
+Command :: identify -format %m '/tmp/Screenshot from 2013-04-16 11_50_4620130708-22868-1cns5fl.png[0]'
+Command :: identify -format %m '/tmp/Screenshot from 2013-04-16 11_50_4620130708-22868-1cns5fl.png[0]'
+Command :: identify -format %m '/tmp/Screenshot from 2013-04-16 11_50_4620130708-22868-1cns5fl.png[0]'
+Command :: convert '/tmp/Screenshot from 2013-04-16 11_50_4620130708-22868-1cns5fl.png[0]' -auto-orient -resize "300x300>" '/tmp/Screenshot from 2013-04-16 11_50_4620130708-22868-1cns5fl20130708-22868-1i6bp3n'
+Command :: file -b --mime '/tmp/Screenshot from 2013-04-16 11_50_4620130708-22868-1cns5fl20130708-22868-1i6bp3n'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Binary data inserted for `string` type on column `photo_content_type`
+  [1m[35mSQL (6.8ms)[0m  INSERT INTO "contacts" ("created_at", "email", "first_name", "landline", "last_name", "mobile", "photo_content_type", "photo_file_name", "photo_file_size", "photo_updated_at", "twitter", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", Mon, 08 Jul 2013 11:40:17 UTC +00:00], ["email", "mas@dd.dd"], ["first_name", "Massimiliano"], ["landline", ""], ["last_name", "DI Dato"], ["mobile", "43434343"], ["photo_content_type", "image/png"], ["photo_file_name", "Screenshot_from_2013-04-16_11_50_46.png"], ["photo_file_size", 481737], ["photo_updated_at", Mon, 08 Jul 2013 11:40:16 UTC +00:00], ["twitter", ""], ["updated_at", Mon, 08 Jul 2013 11:40:17 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[36m (8.0ms)[0m  [1mcommit transaction[0m
+  Rendered contacts/_contact.html.haml (1.8ms)
+  Rendered contacts/create.js.erb (2.8ms)
+Completed 200 OK in 579ms (Views: 16.9ms | ActiveRecord: 14.9ms)
+
+
+Started GET "/contacts/48" for 127.0.0.1 at 2013-07-08 12:40:20 +0100
+Processing by ContactsController#show as JS
+  Parameters: {"id"=>"48"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "48"]]
+  Rendered contacts/_show.html.haml (4.2ms)
+  Rendered contacts/show.js.erb (5.2ms)
+Completed 200 OK in 9ms (Views: 6.5ms | ActiveRecord: 0.2ms)
+
+
+Started DELETE "/contacts/48" for 127.0.0.1 at 2013-07-08 12:40:26 +0100
+Processing by ContactsController#destroy as JS
+  Parameters: {"id"=>"48"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "48"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+[paperclip] Scheduling attachments for deletion.
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "contacts" WHERE "contacts"."id" = ?[0m  [["id", 48]]
+[paperclip] Deleting attachments.
+[paperclip] deleting /home/team/Projects/contacts_rails/public/system/contacts/photos/000/000/048/original/Screenshot_from_2013-04-16_11_50_46.png
+[paperclip] deleting /home/team/Projects/contacts_rails/public/system/contacts/photos/000/000/048/medium/Screenshot_from_2013-04-16_11_50_46.png
+  [1m[35m (5.3ms)[0m  commit transaction
+  Rendered contacts/destroy.js.erb (0.5ms)
+Completed 200 OK in 16ms (Views: 2.0ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 12:42:24 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (7.0ms)
+  Rendered contacts/new.js.erb (8.5ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 12:46:38 +0100
+Processing by ContactsController#index as JS
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_contact.html.haml (1.5ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/index.js.erb (4.1ms)
+Completed 200 OK in 8ms (Views: 5.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts/45" for 127.0.0.1 at 2013-07-08 12:46:41 +0100
+Processing by ContactsController#show as JS
+  Parameters: {"id"=>"45"}
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1  [["id", "45"]]
+  Rendered contacts/_show.html.haml (1.6ms)
+  Rendered contacts/show.js.erb (2.5ms)
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos/medium/missing.png" for 127.0.0.1 at 2013-07-08 12:46:41 +0100
+
+ActionController::RoutingError (No route matches [GET] "/photos/medium/missing.png"):
+  actionpack (3.2.13) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.13) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.13) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.13) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.13) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.13) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.13) lib/rails/engine.rb:479:in `call'
+  railties (3.2.13) lib/rails/application.rb:223:in `call'
+  railties (3.2.13) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  rack (1.4.5) lib/rack/handler/webrick.rb:59:in `service'
+  /home/team/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/team/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/team/.rvm/rubies/ruby-1.9.3-p125/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/team/.rvm/gems/ruby-1.9.3-p125@visa_test/gems/actionpack-3.2.13/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (0.6ms)
+
+
+Started GET "/contacts/45/edit" for 127.0.0.1 at 2013-07-08 12:46:46 +0100
+Processing by ContactsController#edit as JS
+  Parameters: {"id"=>"45"}
+  [1m[36mContact Load (0.1ms)[0m  [1mSELECT "contacts".* FROM "contacts" WHERE "contacts"."id" = ? LIMIT 1[0m  [["id", "45"]]
+  Rendered contacts/_form.html.haml (4.9ms)
+  Rendered contacts/edit.js.erb (6.3ms)
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 12:46:48 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (4.7ms)
+  Rendered contacts/new.js.erb (5.6ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 12:47:30 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (8.0ms)
+  Rendered contacts/new.js.erb (9.9ms)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 12:47:32 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (4.9ms)
+  Rendered contacts/new.js.erb (6.0ms)
+Completed 200 OK in 15ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 12:47:34 +0100
+Processing by ContactsController#index as JS
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+  Rendered contacts/_contact.html.haml (1.7ms)
+  Rendered contacts/_contact.html.haml (1.0ms)
+  Rendered contacts/index.js.erb (4.6ms)
+Completed 200 OK in 8ms (Views: 6.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:11:22 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (1.9ms)
+  Rendered contacts/_contact.html.haml (1.8ms)
+  Rendered contacts/_contact.html.haml (64.1ms)
+  Rendered contacts/index.html.haml within layouts/application (71.9ms)
+Completed 200 OK in 89ms (Views: 85.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 13:11:22 +0100
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 13:11:22 +0100
+Served asset /contacts.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 13:11:22 +0100
+Served asset /jquery.js - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 13:11:22 +0100
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 13:11:22 +0100
+Served asset /jquery.iframe-transport.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 13:11:22 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 13:11:22 +0100
+Served asset /jquery.remotipart.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 13:11:22 +0100
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 13:11:22 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (5.2ms)
+  Rendered contacts/new.js.erb (6.4ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:12:23 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+  Rendered contacts/_search.html.haml (1.1ms)
+  Rendered contacts/_contact.html.haml (1.1ms)
+  Rendered contacts/_contact.html.haml (0.8ms)
+  Rendered contacts/index.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 20ms (Views: 18.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 13:12:23 +0100
+Served asset /application.css - 200 OK (5ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 13:12:23 +0100
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 13:12:23 +0100
+Served asset /jquery.iframe-transport.js - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 13:12:23 +0100
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 13:12:23 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 13:12:23 +0100
+Served asset /contacts.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 13:12:23 +0100
+Served asset /jquery.remotipart.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 13:12:23 +0100
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 13:12:23 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (3.8ms)
+  Rendered contacts/new.js.erb (4.8ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:17:35 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (1.1ms)
+  Rendered contacts/_contact.html.haml (1.1ms)
+  Rendered contacts/_contact.html.haml (0.8ms)
+  Rendered contacts/index.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 13:17:35 +0100
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 13:17:35 +0100
+Served asset /scaffolds.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 13:17:35 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 13:17:35 +0100
+Served asset /contacts.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 13:17:35 +0100
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 13:17:35 +0100
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 13:17:35 +0100
+Served asset /jquery.remotipart.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 13:17:35 +0100
+Served asset /jquery.iframe-transport.js - 200 OK (0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 13:17:35 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (3.8ms)
+  Rendered contacts/new.js.erb (10.0ms)
+Completed 200 OK in 12ms (Views: 11.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2013-07-08 13:17:36 +0100
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EU0cvAqrh20QcLHjk2FU8XFCr4SkgoxUe+MvxOXsb4w=", "contact"=>{"first_name"=>"Max", "last_name"=>"Smith", "email"=>"email@email.com", "mobile"=>"0123345", "landline"=>"4443434", "twitter"=>"twitteraccount"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("created_at", "email", "first_name", "landline", "last_name", "mobile", "photo_content_type", "photo_file_name", "photo_file_size", "photo_updated_at", "twitter", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 08 Jul 2013 12:17:36 UTC +00:00], ["email", "email@email.com"], ["first_name", "Max"], ["landline", "4443434"], ["last_name", "Smith"], ["mobile", "0123345"], ["photo_content_type", nil], ["photo_file_name", nil], ["photo_file_size", nil], ["photo_updated_at", nil], ["twitter", "twitteraccount"], ["updated_at", Mon, 08 Jul 2013 12:17:36 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (10.5ms)[0m  commit transaction
+  Rendered contacts/_contact.html.haml (1.6ms)
+  Rendered contacts/create.js.erb (2.5ms)
+Completed 200 OK in 20ms (Views: 5.9ms | ActiveRecord: 11.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:19:48 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (29.9ms)
+  Rendered contacts/_contact.html.haml (1.3ms)
+  Rendered contacts/_contact.html.haml (1.0ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/index.html.haml within layouts/application (36.2ms)
+Completed 200 OK in 49ms (Views: 46.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 13:19:48 +0100
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 13:19:48 +0100
+Served asset /contacts.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 13:19:48 +0100
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 13:19:48 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 13:19:48 +0100
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 13:19:48 +0100
+Served asset /jquery.remotipart.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 13:19:48 +0100
+Served asset /jquery.iframe-transport.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 13:19:48 +0100
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 13:19:48 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (4.1ms)
+  Rendered contacts/new.js.erb (4.9ms)
+Completed 200 OK in 7ms (Views: 6.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2013-07-08 13:19:49 +0100
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Bsf2tey6Tr8mbq/UL2xnp48zup0Px8Vlz7W2JwRt28A=", "contact"=>{"first_name"=>"Max", "last_name"=>"Smith", "email"=>"email@email.com", "mobile"=>"0123345", "landline"=>"4443434", "twitter"=>"twitteraccount"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("created_at", "email", "first_name", "landline", "last_name", "mobile", "photo_content_type", "photo_file_name", "photo_file_size", "photo_updated_at", "twitter", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 08 Jul 2013 12:19:49 UTC +00:00], ["email", "email@email.com"], ["first_name", "Max"], ["landline", "4443434"], ["last_name", "Smith"], ["mobile", "0123345"], ["photo_content_type", nil], ["photo_file_name", nil], ["photo_file_size", nil], ["photo_updated_at", nil], ["twitter", "twitteraccount"], ["updated_at", Mon, 08 Jul 2013 12:19:49 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (7.5ms)[0m  commit transaction
+  Rendered contacts/_contact.html.haml (1.4ms)
+  Rendered contacts/create.js.erb (2.2ms)
+Completed 200 OK in 15ms (Views: 3.7ms | ActiveRecord: 8.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:28:08 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (1.1ms)
+  Rendered contacts/_contact.html.haml (1.3ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/index.html.haml within layouts/application (8.8ms)
+Completed 200 OK in 20ms (Views: 18.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 13:28:08 +0100
+Served asset /application.css - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 13:28:08 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 13:28:08 +0100
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 13:28:08 +0100
+Served asset /contacts.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 13:28:08 +0100
+Served asset /jquery.remotipart.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 13:28:08 +0100
+Served asset /jquery.iframe-transport.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 13:28:08 +0100
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 13:28:08 +0100
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 13:28:09 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (5.4ms)
+  Rendered contacts/new.js.erb (6.4ms)
+Completed 200 OK in 9ms (Views: 7.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2013-07-08 13:28:10 +0100
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"vdVOQZnii32qTkBohODE3crbsDh+JB5pRfE2CgKGxpA=", "contact"=>{"first_name"=>"Max", "last_name"=>"Smith", "email"=>"email@email.com", "mobile"=>"0123345", "landline"=>"4443434", "twitter"=>"twitteraccount"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "contacts" ("created_at", "email", "first_name", "landline", "last_name", "mobile", "photo_content_type", "photo_file_name", "photo_file_size", "photo_updated_at", "twitter", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 08 Jul 2013 12:28:10 UTC +00:00], ["email", "email@email.com"], ["first_name", "Max"], ["landline", "4443434"], ["last_name", "Smith"], ["mobile", "0123345"], ["photo_content_type", nil], ["photo_file_name", nil], ["photo_file_size", nil], ["photo_updated_at", nil], ["twitter", "twitteraccount"], ["updated_at", Mon, 08 Jul 2013 12:28:10 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (7.6ms)[0m  commit transaction
+  Rendered contacts/_contact.html.haml (1.6ms)
+  Rendered contacts/create.js.erb (8.5ms)
+Completed 200 OK in 21ms (Views: 10.0ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:47:38 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (1.4ms)
+  Rendered contacts/_contact.html.haml (2.1ms)
+  Rendered contacts/_contact.html.haml (1.0ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (0.8ms)
+  Rendered contacts/_contact.html.haml (0.8ms)
+  Rendered contacts/index.html.haml within layouts/application (12.2ms)
+Completed 200 OK in 28ms (Views: 23.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:47:42 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+  Rendered contacts/_search.html.haml (0.8ms)
+  Rendered contacts/_contact.html.haml (1.1ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:48:59 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.5ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (1.8ms)
+  Rendered contacts/_contact.html.haml (2.3ms)
+  Rendered contacts/_contact.html.haml (1.7ms)
+  Rendered contacts/_contact.html.haml (1.7ms)
+  Rendered contacts/_contact.html.haml (1.6ms)
+  Rendered contacts/_contact.html.haml (1.7ms)
+  Rendered contacts/index.html.haml within layouts/application (18.0ms)
+Completed 200 OK in 37ms (Views: 34.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:49:01 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.4ms)[0m  SELECT "contacts".* FROM "contacts" 
+  Rendered contacts/_search.html.haml (1.4ms)
+  Rendered contacts/_contact.html.haml (2.1ms)
+  Rendered contacts/_contact.html.haml (1.5ms)
+  Rendered contacts/_contact.html.haml (1.6ms)
+  Rendered contacts/_contact.html.haml (1.8ms)
+  Rendered contacts/_contact.html.haml (1.5ms)
+  Rendered contacts/index.html.haml within layouts/application (16.1ms)
+Completed 200 OK in 66ms (Views: 63.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:49:45 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.4ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (1.4ms)
+  Rendered contacts/_contact.html.haml (2.1ms)
+  Rendered contacts/_contact.html.haml (1.6ms)
+  Rendered contacts/_contact.html.haml (1.5ms)
+  Rendered contacts/_contact.html.haml (1.0ms)
+  Rendered contacts/_contact.html.haml (0.8ms)
+  Rendered contacts/index.html.haml within layouts/application (14.5ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:49:47 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.3ms)[0m  SELECT "contacts".* FROM "contacts" 
+  Rendered contacts/_search.html.haml (1.2ms)
+  Rendered contacts/_contact.html.haml (1.6ms)
+  Rendered contacts/_contact.html.haml (1.3ms)
+  Rendered contacts/_contact.html.haml (1.6ms)
+  Rendered contacts/_contact.html.haml (1.1ms)
+  Rendered contacts/_contact.html.haml (1.2ms)
+  Rendered contacts/index.html.haml within layouts/application (13.1ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:47 +0100
+Served asset /contacts.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:47 +0100
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:47 +0100
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:47 +0100
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:47 +0100
+Served asset /jquery.iframe-transport.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:47 +0100
+Served asset /jquery.remotipart.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:47 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:47 +0100
+Served asset /application.js - 200 OK (0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:49:48 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (1.7ms)
+  Rendered contacts/_contact.html.haml (2.1ms)
+  Rendered contacts/_contact.html.haml (1.8ms)
+  Rendered contacts/_contact.html.haml (1.0ms)
+  Rendered contacts/_contact.html.haml (1.2ms)
+  Rendered contacts/_contact.html.haml (1.0ms)
+  Rendered contacts/index.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:48 +0100
+Served asset /contacts.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:48 +0100
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:48 +0100
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:48 +0100
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:48 +0100
+Served asset /jquery.remotipart.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:48 +0100
+Served asset /jquery.iframe-transport.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:48 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:48 +0100
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:49:50 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.2ms)[0m  SELECT "contacts".* FROM "contacts" 
+  Rendered contacts/_search.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (1.3ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (1.0ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/index.html.haml within layouts/application (10.4ms)
+Completed 200 OK in 23ms (Views: 20.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:49:56 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (1.1ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (0.8ms)
+  Rendered contacts/_contact.html.haml (0.8ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/index.html.haml within layouts/application (9.5ms)
+Completed 200 OK in 22ms (Views: 20.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:57 +0100
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:57 +0100
+Served asset /contacts.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:57 +0100
+Served asset /jquery.remotipart.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:57 +0100
+Served asset /jquery.js - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:57 +0100
+Served asset /jquery.iframe-transport.js - 200 OK (2ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:57 +0100
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:57 +0100
+Served asset /jquery_ujs.js - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:57 +0100
+Served asset /application.js - 200 OK (1ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 13:49:57 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (5.4ms)
+  Rendered contacts/new.js.erb (6.6ms)
+Completed 200 OK in 9ms (Views: 8.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:49:58 +0100
+Processing by ContactsController#index as HTML
+  [1m[35mContact Load (0.7ms)[0m  SELECT "contacts".* FROM "contacts" 
+  Rendered contacts/_search.html.haml (2.0ms)
+  Rendered contacts/_contact.html.haml (2.0ms)
+  Rendered contacts/_contact.html.haml (1.5ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/index.html.haml within layouts/application (45.7ms)
+Completed 200 OK in 59ms (Views: 56.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:58 +0100
+Served asset /application.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:58 +0100
+Served asset /jquery.iframe-transport.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:58 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:58 +0100
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 13:49:58 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:58 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:58 +0100
+Served asset /jquery.remotipart.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 13:49:58 +0100
+Served asset /application.js - 304 Not Modified (1ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 13:49:59 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (3.8ms)
+  Rendered contacts/new.js.erb (10.8ms)
+Completed 200 OK in 13ms (Views: 12.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:50:12 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.3ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (1.3ms)
+  Rendered contacts/_contact.html.haml (1.6ms)
+  Rendered contacts/_contact.html.haml (1.3ms)
+  Rendered contacts/_contact.html.haml (1.2ms)
+  Rendered contacts/_contact.html.haml (1.1ms)
+  Rendered contacts/_contact.html.haml (1.2ms)
+  Rendered contacts/index.html.haml within layouts/application (13.0ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 13:50:12 +0100
+Served asset /application.css - 200 OK (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 13:50:12 +0100
+Served asset /scaffolds.css - 200 OK (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 13:50:12 +0100
+Served asset /jquery.js - 200 OK (1ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 13:50:12 +0100
+Served asset /jquery_ujs.js - 200 OK (1ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 13:50:12 +0100
+Served asset /contacts.css - 200 OK (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 13:50:12 +0100
+Served asset /application.js - 200 OK (3ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 13:50:12 +0100
+Served asset /jquery.remotipart.js - 200 OK (30ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 13:50:12 +0100
+Served asset /jquery.iframe-transport.js - 200 OK (0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 13:50:13 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (4.8ms)
+  Rendered contacts/new.js.erb (5.8ms)
+Completed 200 OK in 8ms (Views: 7.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/contacts" for 127.0.0.1 at 2013-07-08 13:50:14 +0100
+Processing by ContactsController#create as JS
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zCLwph5ejtgLoWv+KikZqjuSUcmrUl9rBm2RqYNpcj0=", "contact"=>{"first_name"=>"Max", "last_name"=>"Smith", "email"=>"email@email.com", "mobile"=>"0123345", "landline"=>"4443434", "twitter"=>"twitteraccount"}, "commit"=>"Save"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "contacts" ("created_at", "email", "first_name", "landline", "last_name", "mobile", "photo_content_type", "photo_file_name", "photo_file_size", "photo_updated_at", "twitter", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["created_at", Mon, 08 Jul 2013 12:50:14 UTC +00:00], ["email", "email@email.com"], ["first_name", "Max"], ["landline", "4443434"], ["last_name", "Smith"], ["mobile", "0123345"], ["photo_content_type", nil], ["photo_file_name", nil], ["photo_file_size", nil], ["photo_updated_at", nil], ["twitter", "twitteraccount"], ["updated_at", Mon, 08 Jul 2013 12:50:14 UTC +00:00]]
+[paperclip] Saving attachments.
+  [1m[35m (12.1ms)[0m  commit transaction
+  Rendered contacts/_contact.html.haml (1.4ms)
+  Rendered contacts/create.js.erb (2.3ms)
+Completed 200 OK in 19ms (Views: 3.7ms | ActiveRecord: 12.5ms)
+
+
+Started GET "/contacts" for 127.0.0.1 at 2013-07-08 13:50:15 +0100
+Processing by ContactsController#index as HTML
+  [1m[36mContact Load (0.2ms)[0m  [1mSELECT "contacts".* FROM "contacts" [0m
+  Rendered contacts/_search.html.haml (1.5ms)
+  Rendered contacts/_contact.html.haml (1.6ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (1.0ms)
+  Rendered contacts/_contact.html.haml (0.8ms)
+  Rendered contacts/_contact.html.haml (0.9ms)
+  Rendered contacts/_contact.html.haml (0.8ms)
+  Rendered contacts/index.html.haml within layouts/application (23.0ms)
+Completed 200 OK in 44ms (Views: 42.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2013-07-08 13:50:15 +0100
+Served asset /application.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.iframe-transport.js?body=1" for 127.0.0.1 at 2013-07-08 13:50:15 +0100
+Served asset /jquery.iframe-transport.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/contacts.css?body=1" for 127.0.0.1 at 2013-07-08 13:50:15 +0100
+Served asset /contacts.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2013-07-08 13:50:15 +0100
+Served asset /scaffolds.css - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2013-07-08 13:50:15 +0100
+Served asset /jquery.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2013-07-08 13:50:15 +0100
+Served asset /jquery_ujs.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/jquery.remotipart.js?body=1" for 127.0.0.1 at 2013-07-08 13:50:15 +0100
+Served asset /jquery.remotipart.js - 304 Not Modified (0ms)
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2013-07-08 13:50:15 +0100
+Served asset /application.js - 304 Not Modified (0ms)
+
+
+Started GET "/contacts/new" for 127.0.0.1 at 2013-07-08 13:50:15 +0100
+Processing by ContactsController#new as JS
+  Rendered contacts/_form.html.haml (8.9ms)
+  Rendered contacts/new.js.erb (10.2ms)
+Completed 200 OK in 13ms (Views: 11.9ms | ActiveRecord: 0.0ms)
