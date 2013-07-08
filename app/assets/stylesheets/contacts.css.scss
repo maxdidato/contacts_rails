@@ -1,17 +1,56 @@
-// Place all the styles related to the Contacts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-size: 25px;
+  font-weight: normal;
+}
+
+#container {
+  width: 1024px;
+  margin: 0 auto;
+  overflow: hidden; /* add this to contain floated children */
+  background: #f3f3f3;
+  padding: 15px;
+}
 
 #wrapper {
-  width: 2000px;
 
-  overflow: hidden; /* add this to contain floated children */
 }
 #work {
   float:left; /* add this */
+}
+#work form {
+  background: #fff;
+  width: 460px;
+  padding: 20px;
+}
+#work .actions {
+  text-align: center;
 
+}
+#work .actions input {
+  font-size: 16px;
+  padding: 4px 8px;
+}
+#work .field label {
+  width: 80px;
+  display: inline-block;
 }
 #contacts_container {
   width: 500px;
   float: left; /* add this */
 }
+
+#contacts {
+  background: #e3e3e3;
+  width: 90%;
+}
+
+#contacts td,
+#contacts th {
+  padding: 3px 8px;
+}
+#contacts th {
+  background: #d8d8d8;
+}
+
+
+

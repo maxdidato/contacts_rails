@@ -21,7 +21,3 @@
 %p
   %b Photo:
   = image_tag @contact.photo.url(:medium)
-
-= link_to 'Edit', edit_contact_path(@contact)
-\|
-= link_to 'Back', contacts_path
